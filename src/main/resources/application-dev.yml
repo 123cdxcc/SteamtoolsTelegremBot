@@ -1,0 +1,7 @@
+telegram:
+  bot:
+    username: xxxxxxx
+    token: xxxxx:xxxxxxx
+  proxy:
+    host: 127.0.0.1
+    port: 10808

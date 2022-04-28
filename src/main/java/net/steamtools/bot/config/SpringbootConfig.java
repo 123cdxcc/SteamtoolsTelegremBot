@@ -1,5 +1,6 @@
 package net.steamtools.bot.config;
 
+import com.google.gson.Gson;
 import lombok.extern.log4j.Log4j2;
 import net.steamtools.bot.service.Bot;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +28,11 @@ public class SpringbootConfig {
             e.printStackTrace();
         }
         return botsApi;
+    }
+
+    @Bean
+    public Gson gson() {
+        return new Gson();
     }
 
 }
